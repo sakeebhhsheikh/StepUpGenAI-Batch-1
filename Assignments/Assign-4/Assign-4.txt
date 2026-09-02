@@ -1,0 +1,30 @@
+Assin-4 : Atmospheric particle classification 
+The dataset is Monte Carlo generated to simulate registration of high energy gamma particles in 
+a ground-based atmospheric Cherenkov gamma telescope using the imaging technique. The task 
+is to classify the high energy particles to discriminate statistically those caused by primary 
+gammas (signal), from the images of hadronic showers initiated by cosmic rays in the upper 
+atmosphere (background) 
+
+The attributes of the dataset are given below: 
+1.  fLength:    -  major axis of ellipse [mm] 
+2.  fWidth:     - minor axis of ellipse [mm]  
+3.  fSize:      - 10-log of sum of content of all pixels [in #phot] 
+4.  fConc:      - ratio of sum of two highest pixels over fSize  [ratio] 
+5.  fConc1:     - ratio of highest pixel over fSize  [ratio] 
+6.  fAsym:      - distance from highest pixel to center, projected onto major axis [mm] 
+7.  fM3Long:    - 3rd root of third moment along major axis  [mm]  
+8.  fM3Trans:   - 3rd root of third moment along minor axis  [mm] 
+9.  fAlpha:     - angle of major axis with vector to origin [deg] 
+10. fDist:      - distance from origin to center of ellipse [mm] 
+11. class:    g,h  - gamma (signal), hadron (background) 
+
+Objective 
+Based on the given features, classify the particle as belonging to either gamma or hadron based 
+on various attributes. 
+
+Guidelines 
+1. Explore and prepare the data 
+2. Create training and testing data for the model 
+3. Train and test the model using any three or more classification algorithms and compare 
+accuracies between all. 
+4. Show or visualize the output.
