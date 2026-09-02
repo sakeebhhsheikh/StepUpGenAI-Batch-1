@@ -1,0 +1,56 @@
+Assign-3 : Apartment Real estate analysis 
+This dataset is extracted from prominent real estate portals​.​ The targeted housing market for this 
+project is Dubai, United Arab Emirates. Predict the price of an apartment from the following 
+
+attributes: 
+● id-property id 
+● neighborhood-neighborhood name 
+● latitude-location data 
+● longitude-location data 
+● price-market price 
+● size_in_sqft-covered area of apartment 
+● price_per_sqft-price per square feet for the apartment 
+● no_of_bedrooms-number of bedrooms in apartment 
+● no_of_bathrooms-number of bathrooms in apartment 
+● quality-quality based on number of amenities. Contains category labels Ultra, High, 
+Medium, and Low 
+
+The rest of the attributes are either True or False 
+● maid_room 
+● unfurnished 
+● balcony 
+● barbecue_area 
+● built_in_wardrobes 
+● central_ac 
+● childrens_play_area 
+● childrens_pool 
+● concierge 
+● covered_parking 
+● kitchen_appliances 
+● lobby_in_building 
+● maid_service 
+● networked 
+● pets_allowed 
+● private_garden 
+● private_gym 
+● private_jacuzzi 
+● private_pool 
+● security 
+● shared_gym 
+● shared_pool 
+● shared_spa 
+● study 
+● vastu_compliant 
+● view_of_landmark 
+● view_of_water 
+● walk_in_closet 
+
+Objective 
+Predict the apartment price using numerical data. 
+
+Guidelines 
+1. Explore and prepare the data. 
+2. Create training and testing data for the model 
+3. Train and test the model using any three regression algorithms or more and compare rmse 
+error. 
+4. Show or visualize the output.
