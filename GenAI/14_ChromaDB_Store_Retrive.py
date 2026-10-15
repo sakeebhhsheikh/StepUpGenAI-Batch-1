@@ -53,11 +53,14 @@ except Exception:
 
 collection = chroma_client.create_collection(name="my_collection")
 
-documents = [
-    "Company policy: Employees can work remotely up to 3 days a week. Core collaborative hours are 10 AM to 3 PM.",
-    "Expense guidelines: Daily meal allowance during business trips is capped at $75 USD. Receipts must be uploaded within 15 days.",
-    "IT Support: To reset your portal password, use the self-service tool at https://identity.internal or Slack the bot @ITHelper."
-]
+# documents = [
+#     "Company policy: Employees can work remotely up to 3 days a week. Core collaborative hours are 10 AM to 3 PM.",
+#     "Expense guidelines: Daily meal allowance during business trips is capped at $75 USD. Receipts must be uploaded within 15 days.",
+#     "IT Support: To reset your portal password, use the self-service tool at https://identity.internal or Slack the bot @ITHelper."
+# ]
+import pandas as pd
+df = pd.read_parquet("hf://datasets/rag-datasets/rag-mini-wikipedia/data/passages.parquet/part.0.parquet")
+documents = df.iloc[:, 0].values.tolist()
 
 
 def retrive_chunks(collection, embedded_query):

@@ -1,3 +1,12 @@
+#->installing HuggingFace CLI
+# pip install "huggingface_hub[cli]"
+#-> List all downloaded models
+# hf cache ls
+#-> Remove a model: Run 
+# hf cache rm <model_name>.
+#-> Clean incomplete downloads: Run 
+# hf cache prun
+
 # pip install --upgrade transformers
 
 # pip install -U transformers datasets evaluate accelerate torch
