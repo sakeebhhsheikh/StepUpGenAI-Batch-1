@@ -9,10 +9,13 @@
 # ollama stop llama3:latest
 
 #-> View All Downloaded Models
+# ollama pull llama3.3:3b
 # ollama list
+# ollama run llama3.3:3b
+# ollama stop llama3.3:3b
+# ollama show llama3.2:3b
 #-> Remove a Model
 # ollama rm <model_name>
-
 
 
 import ollama
