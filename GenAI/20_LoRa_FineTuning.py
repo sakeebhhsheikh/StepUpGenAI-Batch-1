@@ -150,4 +150,4 @@ tokenizer.save_pretrained(output_dir)
 
 print("Model saved to :", output_dir)
 
-# https://github.com/unslothai/notebooks?WT.mc_id=academic-105485-koreyst
+# https://github.com/unslothai/notebooks?WT.mc_id=academic-105485-koreystLo
